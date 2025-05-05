@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Support Chat</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="site-title">Welcome to Our Platform</h1>
+    <p class="site-description">
+      Click the floating chat button for instant support. Your conversation history is saved below.
+    </p>
+
+    <!-- History Panel -->
+    <section id="chat-history">
+      <h2><i class="fas fa-history"></i> Conversation History</h2>
+      <div id="history-messages"></div>
+    </section>
+
+    <!-- Chat Toggle Button -->
+    <button id="chat-toggle" aria-label="Open chat">
+      <i class="fas fa-comment-dots"></i>
+    </button>
+
+    <!-- Chat Widget Overlay -->
+    <div id="chat-overlay">
+      <div id="chat-widget">
+        <div class="header">
+          <span><i class="fas fa-headset"></i> Support Team</span>
+          <div class="header-buttons">
+            <button id="clear-btn" aria-label="Clear chat"><i class="fas fa-trash"></i></button>
+            <button id="close-btn" aria-label="Close chat"><i class="fas fa-times"></i></button>
+          </div>
+        </div>
+        <div id="message-area" class="messages"></div>
+        <div class="input-area">
+          <input id="chat-input" type="text" placeholder="Type your message...">
+          <button id="send-btn" disabled><i class="fas fa-paper-plane"></i> Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
